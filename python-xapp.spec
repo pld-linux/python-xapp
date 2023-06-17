@@ -1,12 +1,13 @@
 #
 # Conditional build:
 %bcond_without	python2 # CPython 2.x module
-%bcond_without	python3 # CPython 3.x module
+%bcond_with	python3 # CPython 3.x module (built from python3-xapp.spec)
 
 %define		module	xapp
 Summary:	Python 2 XApp library
 Summary(pl.UTF-8):	Biblioteka XApp dla Pythona 2
 Name:		python-%{module}
+# keep 1.x here for python2 support
 Version:	1.8.1
 Release:	3
 License:	LGPL v2+
