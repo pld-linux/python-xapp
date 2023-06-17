@@ -9,7 +9,7 @@ Summary(pl.UTF-8):	Biblioteka XApp dla Pythona 2
 Name:		python-%{module}
 # keep 1.x here for python2 support
 Version:	1.8.1
-Release:	3
+Release:	4
 License:	LGPL v2+
 Group:		Libraries/Python
 #Source0Download: https://github.com/linuxmint/python-xapp/tags
@@ -30,6 +30,7 @@ Requires:	python-pygobject3 >= 3.0
 # gir modules
 Requires:	gtk+3 >= 3.0
 Requires:	xapps-libs >= 1.0
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
